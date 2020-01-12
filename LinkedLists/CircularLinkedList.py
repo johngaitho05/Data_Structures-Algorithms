@@ -10,8 +10,7 @@ class CircularLinkedList:
 
     def display_list(self):
         if self.last is None:
-            print("List is Empty\n")
-            return
+            return []
 
         p = self.last.link
         lst = []
@@ -20,10 +19,9 @@ class CircularLinkedList:
             p = p.link
             if p == self.last.link:
                 break
-        print(lst)
         return lst
 
-    def insert_in_beginning(self ,  data):
+    def insert_in_beginning(self, data):
         if self.last is None:
             self.insert_in_empty_list(data)
             return
@@ -65,10 +63,13 @@ class CircularLinkedList:
     def delete_first_node(self):
         if self.last is None:
             return
+        first_element = self.last.link.info
         if self.last.link == self.last:
             self.last = None
-            return
+            return first_element
+
         self.last.link = self.last.link.link
+        return first_element
 
     def delete_last_node(self):
         if self.last is None: # list is empty
@@ -78,10 +79,12 @@ class CircularLinkedList:
             return
 
         p = self.last.link
+        last_element = self.last.info
         while p.link != self.last:
             p =p.link
         p.link = self.last.link
         self.last = p
+        return last_element
 
     def delete_node(self,x):
         if self.last is None: # list is empty
@@ -142,7 +145,7 @@ if __name__ == '__main__':
             option = int(input("Select an action to be performed: "))
 
             if option == 1:
-                my_list.display_list()
+                print(my_list.display_list())
             elif option == 2:
                 data = int(input("Enter the element to be inserted: "))
                 my_list.insert_in_beginning(data)
