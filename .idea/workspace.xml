@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="754c4f52-8ce5-4831-8f7b-b19f534e641b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Queue/ArrayQueue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queue/LinkedQueue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queue/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Queue/Deque.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stack/LinkedStack.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stack/LinkedStack.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +43,7 @@
       <recent name="C:\Users\John YK\PycharmProjects\Data Structures and Algoritms" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ArrayQueue">
+  <component name="RunManager" selected="Python.Deque">
     <configuration name="ArrayQueue" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data_Structures&amp;Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,27 +65,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ArrayStack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data_Structures&amp;Algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Stack" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stack/ArrayStack.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="CircularLinkedList" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data_Structures&amp;Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,6 +78,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Deque" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data_Structures&amp;Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Queue" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Queue/Deque.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,19 +195,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.SingleLinkedList " />
-      <item itemvalue="Python.ArrayStack" />
       <item itemvalue="Python.LinkedStack" />
       <item itemvalue="Python.ArrayQueue" />
       <item itemvalue="Python.LinkedQueue" />
       <item itemvalue="Python.CircularLinkedList" />
+      <item itemvalue="Python.Deque" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Deque" />
         <item itemvalue="Python.ArrayQueue" />
         <item itemvalue="Python.LinkedQueue" />
         <item itemvalue="Python.CircularLinkedList" />
         <item itemvalue="Python.LinkedStack" />
-        <item itemvalue="Python.ArrayStack" />
       </list>
     </recent_temporary>
   </component>
@@ -256,22 +252,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="491" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578055185923" />
-    <state width="1345" height="2" key="GridCell.Tab.0.bottom" timestamp="1578828544260">
+    <state width="1345" height="512" key="GridCell.Tab.0.bottom" timestamp="1578830276230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578828544260" />
-    <state width="1345" height="2" key="GridCell.Tab.0.center" timestamp="1578828544260">
+    <state width="1345" height="512" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578830276230" />
+    <state width="1345" height="512" key="GridCell.Tab.0.center" timestamp="1578830276230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578828544260" />
-    <state width="1345" height="2" key="GridCell.Tab.0.left" timestamp="1578828544260">
+    <state width="1345" height="512" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578830276230" />
+    <state width="1345" height="512" key="GridCell.Tab.0.left" timestamp="1578830276230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578828544260" />
-    <state width="1345" height="2" key="GridCell.Tab.0.right" timestamp="1578828544260">
+    <state width="1345" height="512" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578830276230" />
+    <state width="1345" height="512" key="GridCell.Tab.0.right" timestamp="1578830276230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578828544260" />
+    <state width="1345" height="512" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578830276230" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1578821366091">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
