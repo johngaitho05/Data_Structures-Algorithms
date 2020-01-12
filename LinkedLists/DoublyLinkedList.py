@@ -65,7 +65,7 @@ class DoublyLinkedList:
             print("List is empty")
             return
         if self.start.info == x:
-            self.insert_in_begining(data)
+            self.insert_in_beginning(data)
             return
         p = self.start
         while p is not None:
@@ -172,7 +172,7 @@ if __name__ == '__main__':
                 my_list.display_list()
             elif option == 2:
                 data = int(input("Enter the element to be inserted: "))
-                my_list.insert_in_begining(data)
+                my_list.insert_in_beginning(data)
             elif option == 3:
                 data = int(input("Enter the element to be : "))
                 my_list.insert_at_end(data)

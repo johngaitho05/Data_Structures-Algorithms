@@ -80,7 +80,6 @@ class SingleLinkedList:
 
     def display_list(self):
         if self.start is None:
-            print("List is empty")
             return []
         else:
             p = self.start
@@ -88,7 +87,6 @@ class SingleLinkedList:
             while p is not None:
                 lst.append(p.info)
                 p = p.link
-            print(lst)
             return lst
 
     def count_nodes(self):
@@ -200,7 +198,9 @@ class SingleLinkedList:
     def delete_first_node(self):
         if self.start is None:
             return
+        p = self.start
         self.start = self.start.link
+        return p.info
 
     def delete_last_node(self):
         if self.start is None:
