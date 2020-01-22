@@ -41,10 +41,8 @@ class BinarySearchTree:
             p = Node(x)
         elif x < p.info:
             p.lchild = self._insert(p.lchild, x)
-        elif x >p.info:
-            p.rchild = self._insert(p.rchild, x)
         else:
-            print(x, " Already present in the tree")
+            p.rchild = self._insert(p.rchild, x)
         return p
 
     def search(self, x):
@@ -107,34 +105,49 @@ class BinarySearchTree:
         return self._max(p.rchild)
 
     def preorder(self):
-         self._preorder(self.root)
+        return self._preorder(self.root)
 
     def _preorder(self, p):
         if p is None:
-            return
-        print(p.info," ", end='')
-        self._preorder(p.lchild)
-        self._preorder(p.rchild)
+            return []
+        elif p.lchild is None and p.rchild is None:
+            return [p.info]
+        elif p.rchild is None:
+            return [p.info] + self._preorder(p.lchild)
+        elif p.lchild is None:
+            return [p.info] + self._preorder(p.rchild)
+        else:
+            return [p.info]+ self._preorder(p.lchild) + self._preorder(p.rchild)
 
     def inorder(self):
-        self._inorder(self.root)
+        return self._inorder(self.root)
 
     def _inorder(self,p):
         if p is None:
-            return
-        self._inorder(p.lchild)
-        print(p.info, " ", end='')
-        self._inorder(p.rchild)
+            return []
+        elif p.lchild is None and p.rchild is None:
+            return [p.info]
+        elif p.rchild is None:
+            return self._inorder(p.lchild) + [p.info]
+        elif p.lchild is None:
+            return [p.info] + self._inorder(p.rchild)
+        else:
+            return self._inorder(p.lchild) + [p.info] + self._inorder(p.rchild)
 
     def postorder(self):
         return self._postorder(self.root)
 
     def _postorder(self, p):
         if p is None:
-            return
-        self._postorder(p.lchild)
-        self._postorder(p.rchild)
-        print(p.info, " ", end='')
+            return []
+        elif p.lchild is None and p.rchild is None:
+            return [p.info]
+        elif p.rchild is None:
+            return self._postorder(p.lchild) + [p.info]
+        elif p.lchild is None:
+            return self._postorder(p.rchild) + [p.info]
+        else:
+            return self._postorder(p.lchild) + self._postorder(p.rchild) + [p.info]
 
     def level_order(self):
         if self.root is None:
@@ -197,13 +210,13 @@ if __name__ == '__main__':
             elif option == 5:
                 style = int(input("Select traversal method:\n1.Preorder 2.Inorder 3.Postorder\n"))
                 if style == 1:
-                    bst.preorder()
+                    print(bst.preorder())
                     print()
                 elif style == 2:
-                    bst.inorder()
+                    print(bst.inorder())
                     print()
                 elif style == 3:
-                    bst.postorder()
+                    print(bst.postorder())
                     print()
             elif option == 6:
                 print("Height of tree is: ", bst.height())

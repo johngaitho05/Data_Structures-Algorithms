@@ -1,13 +1,19 @@
-from LinkedLists.SortedLinkedList import SortedLinkedList
+from Heap.Heap import MaxHeap
 
 
 class EmptyQueueError(Exception):
     pass
 
 
+class Node:
+    def __init__(self, data, priority):
+        self.info = data
+        self.priority = priority
+
+
 class PriorityQueue:
     def __init__(self):
-        self.items = SortedLinkedList()
+        self.items = MaxHeap()
 
     def is_empty(self):
         return self.items.display() == []
@@ -15,21 +21,22 @@ class PriorityQueue:
     def size(self):
         return len(self.items.display())
 
-    def enqueue(self, item,data_priority):
-        self.items.insert(item, data_priority)
+    def enqueue(self, data,data_priority):
+        temp = Node(data, data_priority)
+        self.items.insert(temp)
 
     def dequeue(self):
         if self.is_empty():
             raise EmptyQueueError("Queue is Empty")
-        return self.items.delete_first_node()
+        return self.items.delete_root().info
 
     def peek(self):
         if self.is_empty():
             raise EmptyQueueError("Queue is Empty")
-        return self.items.display()[0]
+        return self.items.display()[0].info
 
     def display(self):
-        return self.items.display()
+        return [item.info for item in self.items.display()]
 
 
 if __name__ == '__main__':

@@ -6,8 +6,11 @@ class Node:
 
 
 class DoublyLinkedList:
-    def __init__(self):
+    def __init__(self, initial_elements=None):
         self.start = None
+        if initial_elements is not None:
+            for element in initial_elements:
+                self.insert_at_end(element)
 
     def display_list(self):
         if self.start is None:
@@ -82,10 +85,6 @@ class DoublyLinkedList:
             p.prev.next = temp
             p.prev = temp
 
-    def add_initial_elements(self, elements):
-        for element in elements:
-            self.insert_at_end(element)
-
     def delete_first_node(self):
         if self.start is None:
             return
@@ -149,11 +148,12 @@ class DoublyLinkedList:
 
 
 if __name__ == '__main__':
-    my_list = DoublyLinkedList()
     default_values = input('Enter a list of default values(separated '
                            'by commas) or press enter to initialize an empty list: ')
     if default_values != '':
-        my_list.add_initial_elements([int(value) for value in default_values.split(',')])
+        my_list = DoublyLinkedList([int(value) for value in default_values.split(',')])
+    else:
+        my_list = DoublyLinkedList()
     while True:
         print('1.Display list')
         print('2.Insert in the beginning')

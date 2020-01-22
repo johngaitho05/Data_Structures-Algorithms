@@ -5,8 +5,11 @@ class Node:
 
 
 class CircularLinkedList:
-    def __init__(self):
+    def __init__(self, initial_elements=None):
         self.last = None
+        if initial_elements is not None:
+            for element in initial_elements:
+                self.insert_at_end(element)
 
     def display_list(self):
         if self.last is None:
@@ -109,10 +112,6 @@ class CircularLinkedList:
             if self.last.info == x:
                 self.last = p
 
-    def add_initial_elements(self, elements):
-        for element in elements:
-            self.insert_at_end(element)
-
     def concatenate(self, list2):  # appends list2 to the original list1
         if self.last is None:
             self.last = list2.start
@@ -126,11 +125,12 @@ class CircularLinkedList:
 
 
 if __name__ == '__main__':
-    my_list = CircularLinkedList()
     default_values = input('Enter a list of default values(separated '
                            'by commas) or press enter to initialize an empty list: ')
     if default_values != '':
-        my_list.add_initial_elements([int(value) for value in default_values.split(',')])
+        my_list = CircularLinkedList([int(value) for value in default_values.split(',')])
+    else:
+        my_list = CircularLinkedList()
     while True:
         print('1.Display list')
         print('2.Insert in the beginning')
@@ -164,11 +164,12 @@ if __name__ == '__main__':
                 x = int(input("Specify the node that you want to delete: "))
                 my_list.delete_node(x)
             elif option == 8:
-                new_list = CircularLinkedList()
                 default_values = input('Enter list2 default values separated by commas'
                                        ' or press enter to initialize an empty list: ')
                 if default_values != '':
-                    new_list.add_initial_elements([int(value) for value in default_values.split(',')])
+                    new_list = CircularLinkedList([int(value) for value in default_values.split(',')])
+                else:
+                    new_list = CircularLinkedList()
                 my_list.concatenate(new_list)
             else:
                 print("Invalid choice!")

@@ -10,8 +10,11 @@ class Node:
 
 class SortedLinkedList:
 
-    def __init__(self):
+    def __init__(self, initial_elements=None):
         self.start = None
+        if initial_elements is not None:
+            for element in initial_elements:
+                self.insert(element)
 
     def insert(self, data, data_priority=None):
         temp = Node(data,data_priority)
@@ -60,17 +63,14 @@ class SortedLinkedList:
             p = p.link
         return lst
 
-    def add_initial_elements(self, elements):
-        for element in elements:
-            self.insert(element)
-
 
 if __name__ == '__main__':
-    my_list = SortedLinkedList()
     default_values = input('Enter a list of default values(separated '
                            'by commas) or press enter to initialize an empty list: ')
     if default_values != '':
-        my_list.add_initial_elements([int(value) for value in default_values.split(',')])
+        my_list = SortedLinkedList([int(value) for value in default_values.split(',')])
+    else:
+        my_list = SortedLinkedList()
 
     while True:
         print("1.Dispaly List")

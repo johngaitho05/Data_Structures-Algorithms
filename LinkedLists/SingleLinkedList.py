@@ -75,8 +75,11 @@ def divide_list(p):
 
 
 class SingleLinkedList:
-    def __init__(self):
+    def __init__(self, initial_elements=None):
         self.start = None
+        if initial_elements is not None:
+            for element in initial_elements:
+                self.insert_at_end(element)
 
     def display_list(self):
         if self.start is None:
@@ -126,10 +129,6 @@ class SingleLinkedList:
             p = p.link
         p.link = temp
 
-    def add_initial_elements(self, elements):
-        for element in elements:
-            self.insert_at_end(element)
-
     def insert_after(self, data, x):
         p = self.start
         while p is not None:
@@ -151,7 +150,7 @@ class SingleLinkedList:
             self.insert_in_beginning(data)
             return
         p = self.start
-        while p.link.info is not None:
+        while p.link is not None:
             if p.link.info == x:
                 break
             p = p.link
@@ -349,13 +348,12 @@ class SingleLinkedList:
 
 
 if __name__ == '__main__':
-
-    my_list = SingleLinkedList()
     default_values = input('Enter a list of default values(separated '
                            'by commas) or press enter to initialize an empty list: ')
     if default_values != '':
-        my_list.add_initial_elements([int(value) for value in default_values.split(',')])
-
+        my_list = SingleLinkedList([int(value) for value in default_values.split(',')])
+    else:
+        my_list = SingleLinkedList()
     while True:
         print("1.Display List")
         print("2.Count the number of nodes")
@@ -379,7 +377,7 @@ if __name__ == '__main__':
 
         option = int(input('Enter your choice: '))
         if option == 1:
-            my_list.display_list()
+            print(my_list.display_list())
         elif option == 2:
             my_list.count_nodes()
         elif option == 3:
