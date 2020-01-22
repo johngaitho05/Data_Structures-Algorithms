@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="754c4f52-8ce5-4831-8f7b-b19f534e641b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Heap/Heap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Heap/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorting/Sorting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorting/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTree/BinarySearchTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/BinarySearchTree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedLists/DoublyLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedLists/DoublyLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedLists/SingleLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedLists/SingleLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedLists/SortedLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedLists/SortedLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queue/PriorityQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Queue/PriorityQueue.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
