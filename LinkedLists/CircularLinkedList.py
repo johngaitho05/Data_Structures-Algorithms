@@ -122,7 +122,7 @@ class CircularLinkedList:
         self.last.link = list2.last.link
         list2.last.link = p
         self.last = list2.last
-
+        return self
 
 if __name__ == '__main__':
     default_values = input('Enter a list of default values(separated '
@@ -170,7 +170,7 @@ if __name__ == '__main__':
                     new_list = CircularLinkedList([int(value) for value in default_values.split(',')])
                 else:
                     new_list = CircularLinkedList()
-                my_list.concatenate(new_list)
+                print(my_list.concatenate(new_list))
             else:
                 print("Invalid choice!")
         except ValueError:

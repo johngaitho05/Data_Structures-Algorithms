@@ -6,8 +6,11 @@ class EmptyQueueError(Exception):
 
 
 class LinkedQueue:
-    def __init__(self):
+    def __init__(self, initial_elements=None):
         self.items = CircularLinkedList()
+        if initial_elements is not None:
+            for element in initial_elements:
+                self.enqueue(element)
 
     def is_empty(self):
         return self.items.display_list() == []
@@ -30,6 +33,10 @@ class LinkedQueue:
 
     def display(self):
         return self.items.display_list()
+
+    def concatenate(self, queue2):
+        self.items.concatenate(queue2.items)
+        return self
 
 
 if __name__ == '__main__':

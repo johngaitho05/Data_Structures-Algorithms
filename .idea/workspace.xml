@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="754c4f52-8ce5-4831-8f7b-b19f534e641b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Searching/Searching.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Searching/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queue/LinkedQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Queue/LinkedQueue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting/Sorting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting/Sorting.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +44,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\John YK\PycharmProjects\Data_StructuresAndAlgoritms" />
       <recent name="C:\Users\John YK\PycharmProjects\Data Structures and Algoritms\LinkedLists" />
       <recent name="C:\Users\John YK\PycharmProjects\Data Structures and Algoritms" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CircularLinkedList">
+  <component name="RunManager" selected="Python.Searching">
     <configuration name="BinarySearchTree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data_Structures&amp;Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,6 +84,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Searching" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data_Structures&amp;Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Searching" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Searching/Searching.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,27 +178,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Sorting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data_Structures&amp;Algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sorting" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\John YK\PycharmProjects\Data_StructuresAndAlgoritms\Sorting\Sorting.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="trial" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data_Structures&amp;Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,17 +204,17 @@
       <item itemvalue="Python.SingleLinkedList" />
       <item itemvalue="Python.BinarySearchTree" />
       <item itemvalue="Python.Sorting (1)" />
-      <item itemvalue="Python.Sorting" />
       <item itemvalue="Python.trial" />
       <item itemvalue="Python.CircularLinkedList" />
+      <item itemvalue="Python.Searching" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.CircularLinkedList" />
+        <item itemvalue="Python.Searching" />
         <item itemvalue="Python.Sorting (1)" />
+        <item itemvalue="Python.CircularLinkedList" />
         <item itemvalue="Python.BinarySearchTree" />
         <item itemvalue="Python.trial" />
-        <item itemvalue="Python.Sorting" />
       </list>
     </recent_temporary>
   </component>
@@ -252,45 +259,45 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="491" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578055185923" />
-    <state width="1340" height="346" key="GridCell.Tab.0.bottom" timestamp="1579690909941">
+    <state width="687" height="227" key="GridCell.Tab.0.bottom" timestamp="1579753698290">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1340" height="346" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579690909941" />
-    <state width="1340" height="346" key="GridCell.Tab.0.center" timestamp="1579690909941">
+    <state width="687" height="227" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579753698290" />
+    <state width="687" height="227" key="GridCell.Tab.0.center" timestamp="1579753698289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1340" height="346" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579690909941" />
-    <state width="1340" height="346" key="GridCell.Tab.0.left" timestamp="1579690909941">
+    <state width="687" height="227" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579753698289" />
+    <state width="687" height="227" key="GridCell.Tab.0.left" timestamp="1579753698289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1340" height="346" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579690909941" />
-    <state width="1340" height="346" key="GridCell.Tab.0.right" timestamp="1579690909941">
+    <state width="687" height="227" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579753698289" />
+    <state width="687" height="227" key="GridCell.Tab.0.right" timestamp="1579753698290">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1340" height="346" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579690909941" />
-    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1578821366091">
+    <state width="687" height="227" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579753698290" />
+    <state width="687" height="204" key="GridCell.Tab.1.bottom" timestamp="1579753690566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578821366091" />
-    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1578821366090">
+    <state width="687" height="204" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579753690566" />
+    <state width="687" height="204" key="GridCell.Tab.1.center" timestamp="1579753690566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1578821366090" />
-    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1578821366090">
+    <state width="687" height="204" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1579753690566" />
+    <state width="687" height="204" key="GridCell.Tab.1.left" timestamp="1579753690565">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1578821366090" />
-    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1578821366091">
+    <state width="687" height="204" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1579753690565" />
+    <state width="687" height="204" key="GridCell.Tab.1.right" timestamp="1579753690566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1578821366091" />
+    <state width="687" height="204" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1579753690566" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1578893805529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578893805529" />
-    <state x="384" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1579686446636">
+    <state x="384" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1579749091437">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579686446636" />
+    <state x="384" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579749091437" />
   </component>
 </project>
