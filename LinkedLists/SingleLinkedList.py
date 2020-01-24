@@ -1,3 +1,6 @@
+class InvalidOperationException(Exception):
+    pass
+
 
 class Node:
     def __init__(self, value):
@@ -98,7 +101,6 @@ class SingleLinkedList:
         while p is not None:
             n += 1
             p = p.link
-        print("Number of nodes = ", n)
         return n
 
     def search(self, x):
@@ -106,13 +108,11 @@ class SingleLinkedList:
         p = self.start
         while p is not None:
             if p.info == x:
-                print('Element found at position', position)
-                return True
+                return position
             position += 1
             p = p.link
         else:
-            print('Element could not be found')
-            return False
+            return
 
     def insert_in_beginning(self, data):
         temp = Node(data)
@@ -155,7 +155,7 @@ class SingleLinkedList:
                 break
             p = p.link
         if p.link is None:
-            print(x, "not present in the list")
+            return
         else:
             temp = Node(data)
             temp.link = p.link
@@ -171,7 +171,7 @@ class SingleLinkedList:
             p = p.link
             i+=1
         if p is None:
-            print("You can insert only up to position", i)
+            raise InvalidOperationException("Index out of range: You can only insert up to position", i)
         else:
             temp = Node(data)
             temp.link = p.link
@@ -179,7 +179,6 @@ class SingleLinkedList:
 
     def delete_node(self, x):
         if self.start is None:
-            print("List is empty")
             return
         if self.start.info == x:
             self.delete_first_node()
@@ -190,7 +189,7 @@ class SingleLinkedList:
                 break
             p = p.link
         if p.link is None:
-            print("Element ", x, "not in list")
+            return
         else:
             p.link = p.link.link
 
@@ -306,7 +305,7 @@ class SingleLinkedList:
         if px is not None:
             prev.link = px
         else:
-            print(x, 'not present in the lst')
+            return
 
     # merge by re-arranging links
     def merge(self, list2):
@@ -382,7 +381,11 @@ if __name__ == '__main__':
             my_list.count_nodes()
         elif option == 3:
             user_data = int(input("Enter the element to be searched: "))
-            my_list.search(user_data)
+            position = my_list.search(user_data)
+            if position is not None:
+                print("Element found at position", my_list.search(user_data))
+            else:
+                print("Element not found")
         elif option == 4:
             user_data = int(input("Enter the element to be inserted: "))
             my_list.insert_in_beginning(user_data)

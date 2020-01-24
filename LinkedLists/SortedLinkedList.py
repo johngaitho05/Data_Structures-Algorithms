@@ -40,10 +40,8 @@ class SortedLinkedList:
             position+=1
             p = p.link
         if p is None or p.info != x:
-            print(x, 'not found in the list')
             return
         else:
-            print(x, 'found at position', position)
             return position
 
     def delete_first_node(self):
@@ -53,7 +51,23 @@ class SortedLinkedList:
         self.start = self.start.link
         return x
 
-    def display(self):
+    def delete_node(self, x):
+        if self.start is None:
+            return
+        if self.start.info == x:
+            self.delete_first_node()
+            return
+        p = self.start
+        while p.link is not None:
+            if p.link.info == x:
+                break
+            p = p.link
+        if p.link is None:
+            return
+        else:
+            p.link = p.link.link
+
+    def display_list(self):
         if self.start is None:
             return []
         p = self.start
@@ -79,7 +93,7 @@ if __name__ == '__main__':
         try:
             option = int(input("Enter your choice: "))
             if option == 1:
-                print(my_list.display())
+                print(my_list.display_list())
             elif option == 2:
                 data = int(input("Enter the element to be inserted: "))
                 my_list.insert(data)

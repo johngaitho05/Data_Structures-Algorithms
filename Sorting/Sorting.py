@@ -157,45 +157,50 @@ def heap_sort(a):
     return a
 
 
-# def radix_sort(a):
-#     queues = [LinkedQueue()] * 10
-#     mostSigPos = digitsinLargest(a)
-#     for k in range(1, mostSigPos+1):
-#         for element in a:
-#             dig = digit(element, k)
-#             queues[dig].enqueue(element)
-#             queues = [LinkedQueue()] * 10
-#
-#     for queue in queues:
-#         print(queue.display())
-#
-#
-# def concatenate(queues):
-#     return _concatenate(0, queues)
-#
-#
-# def _concatenate(n, queues):
-#     if n == 9:
-#         return queues[9]
-#     return queues[n].concatenate(_concatenate(n+1, queues))
-#
-#
-# def digitsinLargest(a):
-#     heap = MaxHeap(initial_elements=a)
-#     large = heap.delete_root()
-#     digits = 0
-#     while large != 0:
-#         digits = digits+1
-#         large//=10
-#     return digits
-#
-#
-# def digit(n, k):
-#     d = 0
-#     for i in range(1,k+1):
-#         d = n%10
-#         n//=10
-#     return d
+def radix_sort(a):
+    queues = [None] * 10
+    mostSigPos = digitsinLargest(a)
+    for k in range(1, mostSigPos+1):
+        for element in a:
+            dig = digit(element, k)
+            if queues[dig] is None:
+                queues[dig] = LinkedQueue()
+            queues[dig].enqueue(element)
+        a = concatenate(queues).display()
+        queues = [None] * 10
+    return a
+
+
+def concatenate(queues):
+    return _concatenate(0, queues)
+
+
+def _concatenate(n, queues):
+    if n == 9:
+        if queues[9] is None:
+            queues[9] = LinkedQueue()
+        return queues[9]
+    elif queues[n] is None:
+        return _concatenate(n+1, queues)
+    return queues[n].concatenate(_concatenate(n+1, queues))
+
+
+def digitsinLargest(a):
+    heap = MaxHeap(initial_elements=a)
+    large = heap.delete_root()
+    digits = 0
+    while large != 0:
+        digits = digits+1
+        large//=10
+    return digits
+
+
+def digit(n, k):
+    d = 0
+    for i in range(1,k+1):
+        d = n%10
+        n//=10
+    return d
 
 
 if __name__ == '__main__':
@@ -231,3 +236,7 @@ if __name__ == '__main__':
     lst1 = [3, 17, 11, 9, 14, 6, 57, 2, 16, ]
     print("Heap Sort:")
     print("Sorted list is:", heap_sort(lst1))
+
+    lst1 = [3, 17, 11, 9, 14, 6, 57, 2, 16, ]
+    print("Radix Sort:")
+    print("Sorted list is:", radix_sort(lst1))
