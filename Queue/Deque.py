@@ -6,8 +6,11 @@ class EmptyQueueError(Exception):
 
 
 class Deque:
-    def __init__(self):
-        self.items = CircularLinkedList()
+    def __init__(self,initial_elements=None):
+        if initial_elements is not None:
+            self.items = CircularLinkedList(initial_elements)
+        else:
+            self.items = CircularLinkedList()
 
     def is_empty(self):
         return self.items.display_list() == []
@@ -46,7 +49,7 @@ class Deque:
 
 
 if __name__ == '__main__':
-    deque1 = Deque()
+    deque1 = Deque([1,2,3,4])
     while True:
         print('1.Display queue')
         print('2.Get deque size')

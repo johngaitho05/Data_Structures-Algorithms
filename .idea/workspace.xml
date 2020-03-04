@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="754c4f52-8ce5-4831-8f7b-b19f534e641b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Trees/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hashing/HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hashing/HashTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTree/BinarySearchTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/BinarySearchTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTree/LinkedBinaryTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/LinkedBinaryTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTree/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/TernarySearchTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinkedLists/SingleLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedLists/SingleLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedLists/SortedLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedLists/SortedLinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queue/Deque.py" beforeDir="false" afterPath="$PROJECT_DIR$/Queue/Deque.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sorting/Sorting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting/Sorting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +52,7 @@
       <recent name="C:\Users\John YK\PycharmProjects\Data Structures and Algoritms" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SingleLinkedList ">
+  <component name="RunManager" selected="Python.TernarySearchTree">
     <configuration name="CircularLinkedList" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data_Structures&amp;Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,28 +74,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="HashTable" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data_Structures&amp;Algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Hashing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Hashing/HashTable.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="LinkedQueue" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Deque" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data_Structures&amp;Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -102,28 +86,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Queue/LinkedQueue.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Searching" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data_Structures&amp;Algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Searching" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Searching/Searching.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Queue/Deque.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,7 +139,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Sorting (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SortedLinkedList" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data_Structures&amp;Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,11 +147,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sorting" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LinkedLists" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sorting/Sorting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LinkedLists/SortedLinkedList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TernarySearchTree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data_Structures&amp;Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Trees" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trees/TernarySearchTree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data_Structures&amp;Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -200,19 +205,19 @@
     <list>
       <item itemvalue="Python.SingleLinkedList " />
       <item itemvalue="Python.SingleLinkedList" />
-      <item itemvalue="Python.Sorting (1)" />
       <item itemvalue="Python.CircularLinkedList" />
-      <item itemvalue="Python.Searching" />
-      <item itemvalue="Python.HashTable" />
-      <item itemvalue="Python.LinkedQueue" />
+      <item itemvalue="Python.Deque" />
+      <item itemvalue="Python.SortedLinkedList" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.TernarySearchTree" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.HashTable" />
-        <item itemvalue="Python.Sorting (1)" />
-        <item itemvalue="Python.LinkedQueue" />
-        <item itemvalue="Python.Searching" />
+        <item itemvalue="Python.TernarySearchTree" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Deque" />
         <item itemvalue="Python.CircularLinkedList" />
+        <item itemvalue="Python.SortedLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -257,45 +262,45 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="491" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578055185923" />
-    <state width="1340" height="363" key="GridCell.Tab.0.bottom" timestamp="1579859863675">
+    <state width="1340" height="207" key="GridCell.Tab.0.bottom" timestamp="1583341200199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1340" height="363" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579859863675" />
-    <state width="1340" height="363" key="GridCell.Tab.0.center" timestamp="1579859863675">
+    <state width="1340" height="207" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583341200199" />
+    <state width="1340" height="207" key="GridCell.Tab.0.center" timestamp="1583341200153">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1340" height="363" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579859863675" />
-    <state width="1340" height="363" key="GridCell.Tab.0.left" timestamp="1579859863674">
+    <state width="1340" height="207" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583341200153" />
+    <state width="1340" height="207" key="GridCell.Tab.0.left" timestamp="1583341199092">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1340" height="363" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579859863674" />
-    <state width="1340" height="363" key="GridCell.Tab.0.right" timestamp="1579859863675">
+    <state width="1340" height="207" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583341199092" />
+    <state width="1340" height="207" key="GridCell.Tab.0.right" timestamp="1583341200198">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1340" height="363" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579859863675" />
-    <state width="687" height="204" key="GridCell.Tab.1.bottom" timestamp="1579753690566">
+    <state width="1340" height="207" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583341200198" />
+    <state width="1340" height="207" key="GridCell.Tab.1.bottom" timestamp="1583341200669">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="687" height="204" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579753690566" />
-    <state width="687" height="204" key="GridCell.Tab.1.center" timestamp="1579753690566">
+    <state width="1340" height="207" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583341200558" />
+    <state width="1340" height="207" key="GridCell.Tab.1.center" timestamp="1583341200498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="687" height="204" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1579753690566" />
-    <state width="687" height="204" key="GridCell.Tab.1.left" timestamp="1579753690565">
+    <state width="1340" height="207" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583341200498" />
+    <state width="1340" height="207" key="GridCell.Tab.1.left" timestamp="1583341200498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="687" height="204" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1579753690565" />
-    <state width="687" height="204" key="GridCell.Tab.1.right" timestamp="1579753690566">
+    <state width="1340" height="207" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583341200498" />
+    <state width="1340" height="207" key="GridCell.Tab.1.right" timestamp="1583341200499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="687" height="204" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1579753690566" />
+    <state width="1340" height="207" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583341200499" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1578893805529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578893805529" />
-    <state x="384" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1579749091437">
+    <state x="384" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1582434138849">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579749091437" />
+    <state x="384" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582434138849" />
   </component>
 </project>

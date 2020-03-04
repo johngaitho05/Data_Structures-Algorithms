@@ -8,75 +8,6 @@ class Node:
         self.link = None
 
 
-def _merge(p1, p2):
-    if p1.info <= p2.info:
-        startM = Node(p1.info)
-        p1 = p1.link
-    else:
-        startM = Node(p2.info)
-        p2 = p2.link
-    pM = startM
-
-    while p1 is not None and p2 is not None:
-        if p1.info <= p2.info:
-            pM.link = p1
-            p1 = p1.link
-        else:
-            pM.link = p2
-            p2 = p2.link
-        pM = pM.link
-
-    if p1 is None:
-        pM.link = p2
-    else:
-        pM.link = p1
-
-    return startM
-
-
-def _merge1(p1, p2):
-    if p1.info <= p2.info:
-        startM = Node(p1.info)
-        p1 = p1.link
-    else:
-        startM = Node(p2.info)
-        p2 = p2.link
-    pM = startM
-
-    while p1 is not None and p2 is not None:
-        if p1.info <= p2.info:
-            pM.link = Node(p1.info)
-            p1 = p1.link
-        else:
-            pM.link = Node(p2.info)
-            p2 = p2.link
-        pM = pM.link
-
-    # second list has finished and there are elements remaining in the first list
-    while p1 is not None:
-        pM.link = Node(p1.info)
-        p1 = p1.link
-        pM = pM.link
-
-    # first list has finished and there are elements remaining in the second list
-    while p2 is not None:
-        pM.link = Node(p2.info)
-        p2 = p2.link
-        pM = pM.link
-
-    return startM
-
-
-def divide_list(p):
-    q = p.link.link
-    while q is not None and q.link is not None:
-        p = p.link
-        q = q.link.link
-    start2 = p.link
-    p.link = None
-    return start2
-
-
 class SingleLinkedList:
     def __init__(self, initial_elements=None):
         self.start = None
@@ -344,6 +275,84 @@ class SingleLinkedList:
         while p.link is not None:
             p = p.link
         p.link = list2.start
+
+
+def _merge(p1, p2):
+    if p1.info <= p2.info:
+        startM = Node(p1.info)
+        p1 = p1.link
+    else:
+        startM = Node(p2.info)
+        p2 = p2.link
+    pM = startM
+
+    while p1 is not None and p2 is not None:
+        if p1.info <= p2.info:
+            pM.link = p1
+            p1 = p1.link
+        else:
+            pM.link = p2
+            p2 = p2.link
+        pM = pM.link
+
+    if p1 is None:
+        pM.link = p2
+    else:
+        pM.link = p1
+
+    return startM
+
+
+def _merge1(p1, p2):
+    if p1.info <= p2.info:
+        startM = Node(p1.info)
+        p1 = p1.link
+    else:
+        startM = Node(p2.info)
+        p2 = p2.link
+    pM = startM
+
+    while p1 is not None and p2 is not None:
+        if p1.info <= p2.info:
+            pM.link = Node(p1.info)
+            p1 = p1.link
+        else:
+            pM.link = Node(p2.info)
+            p2 = p2.link
+        pM = pM.link
+
+    # second list has finished and there are elements remaining in the first list
+    while p1 is not None:
+        pM.link = Node(p1.info)
+        p1 = p1.link
+        pM = pM.link
+
+    # first list has finished and there are elements remaining in the second list
+    while p2 is not None:
+        pM.link = Node(p2.info)
+        p2 = p2.link
+        pM = pM.link
+
+    return startM
+
+
+def divide_list(p):
+    q = p.link.link
+    while q is not None and q.link is not None:
+        p = p.link
+        q = q.link.link
+    start2 = p.link
+    p.link = None
+    return start2
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':

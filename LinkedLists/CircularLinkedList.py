@@ -78,8 +78,9 @@ class CircularLinkedList:
         if self.last is None: # list is empty
             return
         if self.last.link == self.last: # list has only one node
+            to_delete = self.last.info
             self.last =None
-            return
+            return to_delete
 
         p = self.last.link
         last_element = self.last.info
@@ -124,6 +125,8 @@ class CircularLinkedList:
         self.last = list2.last
         return self
 
+
+#####################################################################################################
 if __name__ == '__main__':
     default_values = input('Enter a list of default values(separated '
                            'by commas) or press enter to initialize an empty list: ')

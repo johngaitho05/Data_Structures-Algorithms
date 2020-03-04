@@ -1,4 +1,4 @@
-from BinaryTree.BinarySearchTree import BinarySearchTree
+from Trees.BinarySearchTree import BinarySearchTree
 from Heap.Heap import MaxHeap
 from Queue.LinkedQueue import LinkedQueue
 from LinkedLists.CircularLinkedList import CircularLinkedList
