@@ -96,29 +96,30 @@ class LInkedBinaryTree:
 
 
 ###########################################################
-bt = LInkedBinaryTree()
-bt.create_tree()
-bt.display()
-print()
+if __name__ == '__main__':
+    bt = LInkedBinaryTree()
+    bt.create_tree()
+    bt.display()
+    print()
 
-print("Preorder: ")
-bt.preorder()
-print()
+    print("Preorder: ")
+    bt.preorder()
+    print()
 
 
-print("Inorder: ")
-bt.inorder()
-print()
+    print("Inorder: ")
+    bt.inorder()
+    print()
 
-print("Postorder: ")
-bt.postorder()
-print()
+    print("Postorder: ")
+    bt.postorder()
+    print()
 
-print("Level order: ")
-bt.level_order()
-print()
+    print("Level order: ")
+    bt.level_order()
+    print()
 
-print("Height of tree is: ",bt.height())
+    print("Height of tree is: ",bt.height())
 
 
 
