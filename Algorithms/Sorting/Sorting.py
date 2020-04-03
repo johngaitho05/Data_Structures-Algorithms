@@ -1,7 +1,7 @@
-from Trees.BinarySearchTree import BinarySearchTree
-from Heap.Heap import MaxHeap
-from Queue.LinkedQueue import LinkedQueue
-from LinkedLists.CircularLinkedList import CircularLinkedList
+from Data_Structures.Trees import BinarySearchTree
+from Data_Structures.Heap import MaxHeap
+from Data_Structures.Queue import LinkedQueue
+
 
 def selection_sort(a):
     for i in range(len(a)-1):

@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="754c4f52-8ce5-4831-8f7b-b19f534e641b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Data_Structures/Trees/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data_Structures/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trees/TernarySearchTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/TernarySearchTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/BreadthFirstSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Graphs/BreadthFirstSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/DepthFirstSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Graphs/DepthFirstSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/DijkstraAlgorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Graphs/DijkstraAlgorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Hashing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hashing/HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Hashing/HashTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hashing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Searching/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Heap/Heap.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Heap/Heap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Heap/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Sorting/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedLists/CircularLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/LinkedLists/CircularLinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedLists/DoublyLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/LinkedLists/DoublyLinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedLists/SingleLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/LinkedLists/SingleLinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedLists/SortedLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/LinkedLists/SortedLinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedLists/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queue/ArrayQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Queue/ArrayQueue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queue/Deque.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Queue/Deque.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queue/LinkedQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Queue/LinkedQueue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queue/PriorityQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Queue/PriorityQueue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queue/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Graphs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Searching/Searching.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Searching/Searching.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Searching/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Heap/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting/Sorting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Sorting/Sorting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/LinkedLists/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack/ArrayStack.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Stack/ArrayStack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack/LinkedStack.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Stack/LinkedStack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Queue/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees/BinarySearchTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Trees/BinarySearchTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees/LinkedBinaryTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Trees/LinkedBinaryTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees/TernarySearchTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Trees/TernarySearchTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Structures/Stack/__init__.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,19 +64,33 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Questions" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\John YK\PycharmProjects\Data_StructuresAndAlgoritms" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\John YK\PycharmProjects\Data_StructuresAndAlgoritms\Algorithms" />
+      <recent name="C:\Users\John YK\PycharmProjects\Data_StructuresAndAlgoritms\Data_Structures" />
       <recent name="C:\Users\John YK\PycharmProjects\Data_StructuresAndAlgoritms" />
       <recent name="C:\Users\John YK\PycharmProjects\Data Structures and Algoritms\LinkedLists" />
       <recent name="C:\Users\John YK\PycharmProjects\Data Structures and Algoritms" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\John YK\PycharmProjects\Data_StructuresAndAlgoritms" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python.test">
     <configuration name="ConvertArray" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -60,6 +105,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ConvertArray.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -81,6 +127,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graphs/DepthFirstSearch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -102,6 +149,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graphs/DijkstraAlgorithm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -123,6 +171,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FirstMissingInteger.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -188,6 +237,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -198,12 +248,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.SingleLinkedList " />
+      <item itemvalue="Python.SingleLinkedList" />
       <item itemvalue="Python.ConvertArray" />
       <item itemvalue="Python.DepthFirstSearch" />
       <item itemvalue="Python.DijkstraAlgorithm" />
       <item itemvalue="Python.FirstMissingInteger" />
-      <item itemvalue="Python.SingleLinkedList " />
-      <item itemvalue="Python.SingleLinkedList" />
       <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
@@ -215,18 +265,6 @@
         <item itemvalue="Python.FirstMissingInteger" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -242,21 +280,33 @@
       <workItem from="1578054725309" duration="21000" />
       <workItem from="1578124299347" duration="683000" />
       <workItem from="1578739523495" duration="802000" />
+      <workItem from="1585901669226" duration="859000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578055850997">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1578055850997" />
-    <state x="491" y="193" key="FileChooserDialogImpl" timestamp="1578055185923">
+    <state x="491" y="125" key="FileChooserDialogImpl" timestamp="1585897073911">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="491" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578055185923" />
+    <state x="491" y="125" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585897073911" />
     <state width="1340" height="134" key="GridCell.Tab.0.bottom" timestamp="1583612502779">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

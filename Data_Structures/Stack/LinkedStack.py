@@ -1,4 +1,4 @@
-from LinkedLists.SingleLinkedList import SingleLinkedList
+from Data_Structures.LinkedLists import SingleLinkedList
 
 
 class EmptyStackError(Exception):

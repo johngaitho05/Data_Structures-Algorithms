@@ -1,4 +1,4 @@
-from LinkedLists.SortedLinkedList import SortedLinkedList
+from Data_Structures.LinkedLists.SortedLinkedList import SortedLinkedList
 
 
 class InvalidOperationException(Exception):

@@ -1,4 +1,4 @@
-from Queue.ArrayQueue import ArrayQueue
+from Data_Structures.Queue import ArrayQueue
 
 
 class Node:

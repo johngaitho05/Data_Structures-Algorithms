@@ -1,46 +1,46 @@
-from Heap.Heap import MaxHeap
+from Data_Structures.LinkedLists import CircularLinkedList
 
 
 class EmptyQueueError(Exception):
     pass
 
 
-class Node:
-    def __init__(self, data, priority):
-        self.info = data
-        self.priority = priority
-
-
-class PriorityQueue:
-    def __init__(self):
-        self.items = MaxHeap()
+class LinkedQueue:
+    def __init__(self, initial_elements=None):
+        self.items = CircularLinkedList()
+        if initial_elements is not None:
+            for element in initial_elements:
+                self.enqueue(element)
 
     def is_empty(self):
-        return self.items.display() == []
+        return self.items.display_list() == []
 
     def size(self):
-        return len(self.items.display())
+        return len(self.items.display_list())
 
-    def enqueue(self, data,data_priority):
-        temp = Node(data, data_priority)
-        self.items.insert(temp)
+    def enqueue(self, item):
+        self.items.insert_at_end(item)
 
     def dequeue(self):
         if self.is_empty():
             raise EmptyQueueError("Queue is Empty")
-        return self.items.delete_root().info
+        return self.items.delete_first_node()
 
     def peek(self):
         if self.is_empty():
             raise EmptyQueueError("Queue is Empty")
-        return self.items.display()[0].info
+        return self.items.display_list()[0]
 
     def display(self):
-        return [item.info for item in self.items.display()]
+        return self.items.display_list()
+
+    def concatenate(self, queue2):
+        self.items.concatenate(queue2.items)
+        return self
 
 
 if __name__ == '__main__':
-    myqueue = PriorityQueue()
+    myqueue = LinkedQueue()
     while True:
         print('1.Display queue')
         print('2.Get queue size')
@@ -55,9 +55,8 @@ if __name__ == '__main__':
             elif option == 2:
                 print(myqueue.size())
             elif option == 3:
-                element = int(input('Enter an element to enqueue: '))
-                element_priority = int(input("Enter a value to represent the element's priority: "))
-                myqueue.enqueue(element,element_priority)
+                element = int(input('Enter an element to enqueue '))
+                myqueue.enqueue(element)
             elif option == 4:
                 print('Dequeued element is: ', myqueue.dequeue())
             elif option == 5:

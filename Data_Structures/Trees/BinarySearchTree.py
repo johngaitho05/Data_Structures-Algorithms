@@ -6,7 +6,7 @@ class TreeEmptyError(Exception):
 
 
 class Node:
-    def __init__(self,value):
+    def __init__(self, value):
         self.info = value
         self.lchild = None
         self.rchild = None
@@ -14,29 +14,29 @@ class Node:
 
 class BinarySearchTree:
     def __init__(self):
-        self.root  = None
+        self.root = None
 
     def is_empty(self):
         return self.root is None
 
     def display(self):
-        self._display(self.root,0)
+        self._display(self.root, 0)
 
-    def _display(self,p, level):
+    def _display(self, p, level):
         if p is None:
             return
-        self._display(p.rchild, level+1)
+        self._display(p.rchild, level + 1)
         print()
 
         for i in range(level):
             print("   ", end="")
         print(p.info)
-        self._display(p.lchild, level+1)
+        self._display(p.lchild, level + 1)
 
-    def insert(self,x):
+    def insert(self, x):
         self.root = self._insert(self.root, x)
 
-    def _insert(self,p, x):
+    def _insert(self, p, x):
         if p is None:
             p = Node(x)
         elif x < p.info:
@@ -48,7 +48,7 @@ class BinarySearchTree:
     def search(self, x):
         return self._search(self.root, x)
 
-    def _search(self,p, x):
+    def _search(self, p, x):
         if p is None:
             return None
         if x < p.info:
@@ -64,22 +64,22 @@ class BinarySearchTree:
         if p is None:
             print(x, "not found")
             return p
-        if x < p.info: # delete from left subtree
+        if x < p.info:  # delete from left subtree
             p.lchild = self._delete(p.lchild, x)
-        elif x > p.info: # delete from right subtree
+        elif x > p.info:  # delete from right subtree
             p.rchild = self._delete(p.rchild, x)
         else:
             # key to be deleted is found
-            if p.lchild is not None and p.rchild is not None: # 2 children
+            if p.lchild is not None and p.rchild is not None:  # 2 children
                 s = p.rchild
                 while s.lchild is not None:
                     s = s.lchild
                 p.info = s.info
                 p.rchild = self._delete(p.rchild, s.info)
-            else: # 1 or no child
-                if p.lchild is not None: # only left child
+            else:  # 1 or no child
+                if p.lchild is not None:  # only left child
                     ch = p.lchild
-                else: # only riht child or no child
+                else:  # only riht child or no child
                     ch = p.rchild
                 p = ch
         return p
@@ -89,7 +89,7 @@ class BinarySearchTree:
             raise TreeEmptyError("Tree is empty")
         return self._min(self.root).info
 
-    def _min(self,p):
+    def _min(self, p):
         if p.lchild is None:
             return p
         return self._min(p.lchild)
@@ -117,12 +117,12 @@ class BinarySearchTree:
         elif p.lchild is None:
             return [p.info] + self._preorder(p.rchild)
         else:
-            return [p.info]+ self._preorder(p.lchild) + self._preorder(p.rchild)
+            return [p.info] + self._preorder(p.lchild) + self._preorder(p.rchild)
 
     def inorder(self):
         return self._inorder(self.root)
 
-    def _inorder(self,p):
+    def _inorder(self, p):
         if p is None:
             return []
         elif p.lchild is None and p.rchild is None:
@@ -165,7 +165,7 @@ class BinarySearchTree:
     def height(self):
         return self._height(self.root)
 
-    def _height(self,p):
+    def _height(self, p):
         if p is None:
             return 0
         hL = self._height(p.lchild)
@@ -228,9 +228,3 @@ if __name__ == '__main__':
                 print("Invalid choice")
         except ValueError:
             print("Invalid option")
-
-
-
-
-
-
